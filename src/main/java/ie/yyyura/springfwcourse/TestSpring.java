@@ -9,7 +9,7 @@ public class TestSpring {
         // config location in folder mark as resources and same name
         ClassPathXmlApplicationContext cPxAcontext = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        // 1. name of the Bean and 2. Class which we want to get an Object
+        // 1. name of the Bean and 2. we want to get an Object of this class
         TestBean tb1 = cPxAcontext.getBean("testBean", TestBean.class);
         System.out.println(tb1.getName());
 
